@@ -6,6 +6,9 @@
     <title>Digital Bussiness Card</title>
     <link rel="icon" type="image/x-icon" href="./images/file.png">
     <link rel="stylesheet" href="./DVC.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -19,13 +22,15 @@
 
 <section id="contact-container">
 <div id="contact">
-<h1>Mehul Parmar</h1>
-<h3>Web Developer</h3>
-<h2>SiteSoch</h2>
+<h1 >Mehul Parmar</h1>
+<h3 class="font">Web Developer</h3>
+<h2 class="font">SiteSoch</h2>
 <div class="wrapper">
-<div class="box" id="box-1"><img src="./images/icons8-iphone-14-24.png" alt=""></div>
-<div class="box" id="box-2"><img src="./images/icons8-message-24.png" alt=""></div>
-<div class="box" id="box-3"><img src="./images/icons8-message-24 (1).png" alt=""></div>
+<a href="http://google.com" target="_blank"><div class="box" id="box-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M17 2H7c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM7 16.999V5h10l.002 11.999H7z"></path></svg></div></a>
+<a href="http://google.com" target="_blank"><div class="box" id="box-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg></div></a>
+<a href="http://google.com" target="_blank">
+<div class="box" id="box-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3v3.766L13.277 18H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14h-7.277L9 18.234V16H4V4h16v12z"></path><circle cx="15" cy="10" r="2"></circle><circle cx="9" cy="10" r="2"></circle></svg></div>
+</a>
 </div>
 </div>
 </section>
@@ -43,7 +48,7 @@
 <div id="Mail">
 <div class="mail-group" id="mail-group-1">
 <div id="mobile">
-<img src="./images/icons8-iphone-14-24.png" alt="">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M17 2H7c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM7 16.999V5h10l.002 11.999H7z"></path></svg>
 </div>
 <p class="Topic">Contact Us</p>
 </div>
@@ -61,28 +66,47 @@
 <p class="subtopic">B2/44 Nalanda Chs Ltd Malad West Dely Evershine Nagar Malad Mumbai, Maharashtra, India - 400064</p>
 </div>
 <div class="mail-group" id="mail-group-5">
-<button class="btn">Direction</button>
+<button class="btn" onclick="window.open('http://google.com','_blank')">Direction
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20.56 3.34a1 1 0 0 0-1-.08l-17 8a1 1 0 0 0-.57.92 1 1 0 0 0 .6.9L8 15.45v6.72L13.84 18l4.76 2.08a.93.93 0 0 0 .4.09 1 1 0 0 0 .52-.15 1 1 0 0 0 .48-.79l1-15a1 1 0 0 0-.44-.89zM18.1 17.68l-5.27-2.31L16 9.17l-7.65 4.25-2.93-1.29 13.47-6.34z"></path></svg>
+</button>
 </div>
 </div>
 </section>
 
-<section id="gallery-container">
-<div id="gallery">
-<h2 align="center"><u>Our Services</u></h2>
-<div class="images" id="image-1">
-<img src="./images/pexels-vojtech-okenka-127162-392018.jpg" alt="">
+<section class="img-section">
+    <div class="gallery">
+    <h2 align="center" style="font-size:30px;"><u>Our Services</u></h2>
+      <a href="#img1">
+          <img src="./images/pexels-vojtech-okenka-127162-392018.jpg" alt="Image 1">
+      </a>
+      <a href="#img2">
+          <img src="./images/pexels-tirachard-kumtanom-112571-733856.jpg" alt="Image 2">
+      </a>
+      <a href="#img3">
+        <img src="./images/pexels-pixabay-265087.jpg" alt="Image 3">
+    </a>
+    <a href="#img4">
+        <img src="./images/pexels-tima-miroshnichenko-5439153.jpg" alt="Image 3">
+    </a>
+  </div>
+
+  <div id="img1" class="lightbox">
+      <a href="#" class="close">×</a>
+      <img src="./images/pexels-vojtech-okenka-127162-392018.jpg" alt="Image 1">
+  </div>
+  <div id="img2" class="lightbox">
+      <a href="#" class="close">×</a>
+      <img src="./images/pexels-tirachard-kumtanom-112571-733856.jpg" alt="Image 2">
+  </div>
+  <div id="img3" class="lightbox">
+    <a href="#" class="close">×</a>
+    <img src="./images/pexels-pixabay-265087.jpg" alt="Image 3">
 </div>
-<div class="images" id="image-2">
-<img src="./images/pexels-tirachard-kumtanom-112571-733856.jpg" alt="">
+<div id="img4" class="lightbox">
+    <a href="#" class="close">×</a>
+    <img src="./images/pexels-tima-miroshnichenko-5439153.jpg" alt="Image 3">
 </div>
-<div class="images" id="image-3">
-<img src="./images/pexels-pixabay-265087.jpg" alt="">
-</div>
-<div class="images" id="image-4">
-<img src="./images/pexels-tima-miroshnichenko-5439153.jpg" alt="">
-</div>
-</div>
-</section>
+  </section>
 
 <footer>
 <p>&copy; SiteSoch All Rights are Reserved.</p>
