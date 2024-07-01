@@ -1,0 +1,199 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: lightblue;
+}
+#Intro
+{
+    height: 350px;
+    background: url("./images/pexels-sam-nam-491996-1204148.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#Intro #logo
+{
+    border:2px solid blue;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top:75px;
+    border-radius:100px;
+}
+#Intro #logo img
+{
+    height: 150px;
+}
+
+#contact-container #contact
+{
+    padding-top: 103px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact h1
+{
+    padding:10px 0px;
+    font-size: 35px;
+}
+
+#contact-container #contact .wrapper
+{
+    display: flex;
+    padding-top: 10px;
+}
+
+ #contact .wrapper .box,#Mail #mobile
+{
+    background-color: white;
+    height: 50px;
+    width:50px;
+    margin:10px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container
+{
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+}
+
+#about
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px 20px;
+   background-color: aliceblue;
+   border-radius: 23px;
+   width: 800px;
+}
+#about h1
+{
+   padding:10px 50px;
+   font-size: 35px;  
+}
+#about .description
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+#Mail-container,#gallery-container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#Mail 
+{
+    background-color: aliceblue;
+    border-radius: 23px;
+    width: 800px;
+    padding: 20px 20px;
+}
+
+#Mail .mail-group
+{
+    padding: 10px 20px;
+}
+
+#Mail .mail-group .Topic
+{
+   font-size: 23px;
+}
+
+#Mail .mail-group .subtopic
+{
+   color:grey;
+}
+
+#Mail #mail-group-1
+{
+   display: flex;
+   gap:20px;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+#Mail #mobile
+{
+    background-color: lightskyblue;
+}
+
+#Mail #mobile img
+{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+#Mail .mail-group .btn
+{
+   font-size: 18px;
+   padding: 5px 13px;
+   border: none;
+   border-radius: 30px;
+   background-color: lightskyblue;
+   color: white;
+}
+
+#gallery
+{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    width: 800px;
+    border-radius: 23px;
+    padding: 0px 20px;
+}
+
+#gallery h2
+{
+    font-size: 30px;
+    padding: 20px 0px;
+    text-decoration: underline;
+}
+
+#gallery .images img
+{
+    width: 100%;
+    height:300px;
+    margin: 20px 0px;
+    border: 8px solid white;
+    border-radius: 23px;
+}
+
+footer
+{
+    padding:50px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: grey;
+}
+@media all and (max-width:550px)
+{
+  #gallery,#gallery .images img,#about
+  {
+     width: 80%; 
+     text-align: center;
+     height: auto;
+  }
+  #Mail
+  {
+    width: 80%;
+  }
+}
+
+
+
