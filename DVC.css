@@ -5,7 +5,7 @@
 }
 body{
     font-family: Arial,sans-serif;
-    background-color:rgb(0, 0, 87);
+    /* background-color:rgb(0, 0, 87); */
 }
 
 /* Intro Section */
@@ -16,6 +16,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    /* border:1px solid black; */
 }
 #Intro #logo
 {
@@ -32,6 +33,10 @@ body{
 }
 
 /* Contact Container */
+#contact-container
+{
+  /* border:1px solid red; */
+}
 
 #contact-container #contact
 {
@@ -39,20 +44,21 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 #contact h1
 {
     padding:10px 0px;
     font-size: 35px;
-    color:white;
+    /* color:white; */
 }
 
 .font
 {
     font-weight:normal;
     padding: 1px 0px;
-    color: rgb(196, 196, 196);
+    color: grey
 }
 
 #contact-container #contact .wrapper
@@ -86,6 +92,7 @@ body{
    margin-top: 50px;
    display: flex;
    justify-content: center;
+   /* border:1px solid green; */
 }
 
 #about
@@ -97,6 +104,7 @@ body{
    background-color: aliceblue;
    border-radius: 23px;
    width: 800px;
+   /* width: 80%; */
 }
 #about h1
 {
@@ -113,6 +121,11 @@ body{
 
 /* Mail Section */
 
+#Mail-container
+{
+  /* border:1px solid blue; */
+}
+
 #Mail-container,#gallery-container
 {
     display: flex;
@@ -125,6 +138,7 @@ body{
     background-color: aliceblue;
     border-radius: 23px;
     width: 800px;
+    /* width:80%; */
     padding: 20px 20px;
 }
 
@@ -194,6 +208,7 @@ body{
   flex-direction: row;
   justify-content: center;
   margin-top: 50px;
+  /* border:1px solid darkorchid; */
 }
 
 .gallery {
@@ -205,9 +220,22 @@ body{
     margin-bottom: 5rem;
     background-color: aliceblue;
     width: 800px;
+    /* width: 80%; */
     padding: 40px 20px;
     padding-top: 20px;
     border-radius: 50px;
+  }
+
+  #Heading
+  {
+     font-size: 17px;
+  }
+
+  .gallery .photos
+  {
+    display: flex;
+    justify-content: center;
+    gap:40px;
   }
   
   .gallery a {
@@ -216,7 +244,7 @@ body{
   }
   
   .gallery img {
-    width: 500px;
+    width: 350px;
     border-radius: 1rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.777);
   }
@@ -268,12 +296,32 @@ footer
     padding-bottom: 30px;
     font-size: 17px;
     text-align: center;
-    color: rgb(182, 182, 182);
+    color: grey;
 }
 
-@media all and (max-width: 558px) {
-    
-    .gallery,.gallery img,#about
+@media all and (max-width: 870px) {
+    /* body{
+      background-color:#243B55;
+    } */
+     .gallery,#Mail,#about
+     {
+        width:80%;
+     }
+     .gallery .photos
+    {
+       flex-direction: column;
+    }
+    .gallery h2 u
+    {
+      font-size: 25px;
+    }
+     .gallery .photos img
+    {
+      width:80%;
+    }  
+
+
+    /* .gallery,.gallery img,#about
     {
        width: 80%; 
        text-align: center;
@@ -282,7 +330,7 @@ footer
     #Mail
     {
       width: 80%;
-    }  
+    }   */
 }
 
 
