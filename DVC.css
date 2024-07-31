@@ -289,6 +289,22 @@ body{
     cursor: pointer;
   }
 
+  .darkbutton
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .darkbutton .Dark
+  {
+     background-color: black;
+     color: yellow;
+     padding: 10px 15px;
+     border-radius: 8px;
+  }
+
+
 /* Footer */
 footer
 {
@@ -297,6 +313,7 @@ footer
     font-size: 17px;
     text-align: center;
     color: grey;
+    margin-top: 100px;
 }
 
 @media all and (max-width: 870px) {
